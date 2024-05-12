@@ -7,12 +7,12 @@ VAL_EVERY_N_EPOCH   = 1
 DROPOUT             = 0.5
 
 NUM_EPOCHS          = 50
-OPTIMIZER_PARAMS    = {'type': 'SGD', 'lr': 1e-3, 'momentum': 0.9}
-#OPTIMIZER_PARAMS    = {'type': 'Adam', 'lr': 1e-3, 'betas': (0.9, 0.95), 'weight_decay':1e-4}
+#OPTIMIZER_PARAMS    = {'type': 'SGD', 'lr': 1e-3, 'momentum': 0.9}
+OPTIMIZER_PARAMS    = {'type': 'Adam', 'lr': 1e-3, 'betas': (0.9, 0.95), 'weight_decay':1e-4}
 #OPTIMIZER_PARAMS    = {'type': 'AdamW', 'lr': 1e-3, 'betas': (0.9, 0.95), 'weight_decay':1e-4}
 #OPTIMIZER_PARAMS    = {'type': 'RMSprop', 'lr': 1e-3, 'alpha': 0.95, 'momentum': 0.9, 'weight_decay':1e-4}
-SCHEDULER_PARAMS    = {'type': 'MultiStepLR', 'milestones': [30, 40], 'gamma': 0.2}
-#SCHEDULER_PARAMS    = {'type': 'ExponentialLR', 'gamma': 0.95}
+#SCHEDULER_PARAMS    = {'type': 'MultiStepLR', 'milestones': [30, 40], 'gamma': 0.2}
+SCHEDULER_PARAMS    = {'type': 'ExponentialLR', 'gamma': 0.95}
 #SCHEDULER_PARAMS    = {'type': 'ReduceLROnPlateau', 'mode': 'min', 'factor': 0.5, 'patience': 3}
 
 # Dataaset
